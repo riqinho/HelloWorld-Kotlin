@@ -5,32 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".MainActivity">
+    android:background="@drawable/gradient">
 
-    <!-- Campo de texto para o usuário digitar o nome -->
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textViewHello"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Digite seu nome"
-        android:imeOptions="actionDone"
-        android:inputType="textPersonName"
-        android:gravity="center"
-        android:layout_margin="16dp" />
+        android:text="Bem-vindo, User!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
 
     <!-- Texto que exibirá o Hello World, incrementado com o nome -->
     <TextView
         android:id="@+id/tvHelloMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textSize="24sp" />
+        android:text="Informe seu nome para continuar."
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="100sp"/>
 
-    <TextView
-        android:id="@+id/textViewHello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="minezin hj 23:99?!"
-        android:textAlignment="center"
-        android:textSize="66sp" />
+    <!-- Campo de texto para o usuário digitar o nome -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:hint="Digite seu nome"
+        android:imeOptions="actionDone"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPersonName"
+        />
+
 </LinearLayout>
